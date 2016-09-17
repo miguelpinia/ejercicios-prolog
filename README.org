@@ -5,7 +5,7 @@
 Repositorio usado para guardar la ejecución de ejercicios y otros experimentos
 usando Prolog.
 
-* Instalación de prolog en Ubuntu
+** Instalación de prolog en Ubuntu
 
 Se instala la versión por defecto de swi-prolog disponible en los repositorios
 de Ubuntu
@@ -15,7 +15,7 @@ sudo apt-get install swi-prolog
 #+end_src
 
 
-* Configuración de Emacs
+** Configuración de Emacs
 
 #+begin_src emacs-lisp
 (use-package prolog
@@ -28,3 +28,10 @@ sudo apt-get install swi-prolog
   (add-hook 'prolog-mode-hook 'auto-complete-mode)
   (add-hook 'prolog-mode-hook 'yas-minor-mode))
 #+end_src
+
+** Algunos keybindings
+
+- C-c C-f :: Carga un archivo.
+- C-c C-b :: Carga el buffer actual.
+- C-c C-r :: Carga la región seleccionada.
+- C-c C-p :: Carga el predicado actual.
